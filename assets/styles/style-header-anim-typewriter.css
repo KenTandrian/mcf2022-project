@@ -1,0 +1,40 @@
+#header-sub {
+    text-align: center;
+    color: var(--color-white);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 20px;
+    display: inline-block;
+    width: max-content;
+}
+
+#typewriter {
+    font-family: Roboto, Lato, Anonymous Pro, Chilanka;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--primary-pink); /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    display: inline-block;
+}
+  
+/* The typing effect */
+@keyframes type-out {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes remove-type {
+    from { width: 100% }
+    to { width: 0 }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary-pink); }
+}

@@ -1,0 +1,32 @@
+.header-chevron {
+    color: var(--color-white);
+    text-align: center;
+    height: 50px;
+}
+
+ion-icon.header-chevron-icon {
+    font-size: 64px;
+}
+
+.header-chevron-icon {
+    -webkit-animation: fade_move_down 2s ease-in-out infinite;
+	-moz-animation: fade_move_down 2s ease-in-out infinite;
+	animation: fade_move_down 2s ease-in-out infinite;
+}
+  
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+    0%   { -webkit-transform: translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1; }
+    100% { -webkit-transform: translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+    0%   { -moz-transform: translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1; }
+    100% { -moz-transform: translate(0,20px); opacity: 0; }
+}
+@keyframes fade_move_down {
+    0%   { transform: translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1; }
+    100% { transform: translate(0,20px); opacity: 0; }
+}

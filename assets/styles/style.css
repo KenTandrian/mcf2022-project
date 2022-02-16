@@ -1,0 +1,31 @@
+@import url('style-header.css');
+@import url('style-scroll-btn.css');
+@import url('style-about.css');
+
+/* Colors */
+:root {
+    --primary-blue: #2065BF;
+    --primary-pink: #F22EAD;
+    --primary-cyan: #87F2E7;
+    --secondary-blue: #0098FF;
+    --primary-gradient: linear-gradient(to left, var(--primary-blue), var(--primary-pink));
+    --secondary-gradient: linear-gradient(to left, var(--secondary-blue), var(--primary-cyan));
+    --color-white: #FFF;
+    --color-black: #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%; /* equals to 10px */
+}
+
+body {
+    font-family: 'Overpass','Open Sans', sans-serif;
+}
+
+/* Disable selection */
+::selection {
+    background-color: transparent;
+}
