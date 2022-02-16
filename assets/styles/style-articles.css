@@ -1,0 +1,125 @@
+article {
+    padding: 5rem 0;
+    overflow: auto;
+}
+
+.heading-box {
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+
+.heading-sec {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 4.5rem;
+}
+
+.heading-sec-sub {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    padding: 0 5rem;
+}
+
+.heading-sec-white {
+    color: var(--color-white);
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+.heading-sec-black {
+    color: var(--color-black);
+}
+
+.heading-sec-sub-white {
+    color: var(--color-white);
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+.heading-sec-sub-black {
+    color: var(--color-text-gray);
+}
+
+/* CARDS */
+.card-vertical {
+    border-radius: .9rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    background-color: rgba(255,255,255, .85);
+    transition: transform .2s ease-in-out;
+    min-height: 12.5rem;
+}
+
+.card-horizontal {
+    border-radius: .9rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    background-color: rgba(255,255,255, .85);
+    transition: transform .2s ease-in-out;
+    min-height: 12.5rem;
+    padding: 3rem;
+}
+
+.card-vertical:hover, .card-horizontal:hover {
+    transform: translateY(-.5rem);
+}
+
+.card-img {
+    border-radius: .9rem .9rem 0 0;
+    width: 100%;
+    height: 12.5rem;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+.card-content {
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: left;
+    color: var(--color-black);
+    flex-grow: 1;
+    padding: 2.5rem;
+    width: 100%;
+}
+
+.card-heading {
+    font-size: 2rem;
+}
+
+.card-desc {
+    font-size: 1.6rem;
+}
+
+.card-speaker-box {
+    margin: 1.2rem 0;
+}
+
+.card-pos {
+    font-size: 1.2rem;
+}
+
+.card-icon-box {
+    display: flex;
+    align-items: center;
+    margin: .6rem 0;
+}
+
+.card-icon {
+    display: inline-block;
+    font-size: 2rem !important;
+    margin-right: 1.2rem;
+}
+
+.card-icon-text {
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}

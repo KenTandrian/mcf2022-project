@@ -2,7 +2,7 @@
 #scroll {
     display: none; /* Hidden by default */
     position: fixed;
-    bottom: 2rem;
+    bottom: 3rem;
     right: 3rem;
     z-index: 99;
     border: none;

@@ -14,5 +14,8 @@ This is a website project for the capstone project of Dicoding Indonesia: Front-
 [![CSS3](https://img.shields.io/badge/-CSS3-black?style=flat-square&logo=css3&logoColor=blue)](https://github.com/KenTandrian?tab=repositories&language=css)
 [![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)](https://github.com/KenTandrian?tab=repositories&language=javascript)
 
+## Technologies
+<img src="assets\images\screenshot.png">
+
 ## 
 &#169; Ken Tandrian 2022.

@@ -1,0 +1,24 @@
+.companies-content-box {
+    padding: 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.card-comp-logos {
+    border-radius: .9rem .9rem 0 0;
+    width: 150px;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+@media only screen and (max-width: 1600px){
+    .companies-content-box {
+        padding: 20px 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+}

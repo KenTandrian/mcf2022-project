@@ -1,0 +1,17 @@
+.events {
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), 
+        linear-gradient(to left, rgba(32, 101, 191, 0.5), rgba(242, 46, 173, 0.5)), 
+        url('../images/alexandre-pellaes-6vAjp0pscX0-unsplash_.jpg');
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.events-content-box {
+    padding: 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}

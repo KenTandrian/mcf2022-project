@@ -1,6 +1,11 @@
 @import url('style-header.css');
 @import url('style-scroll-btn.css');
 @import url('style-about.css');
+@import url('style-articles.css');
+@import url('style-events.css');
+@import url('style-companies.css');
+@import url('style-location.css');
+@import url('style-footer.css');
 
 /* Colors */
 :root {
@@ -12,6 +17,7 @@
     --secondary-gradient: linear-gradient(to left, var(--secondary-blue), var(--primary-cyan));
     --color-white: #FFF;
     --color-black: #000;
+    --color-text-gray: #999;
 }
 
 * {
@@ -28,4 +34,23 @@ body {
 /* Disable selection */
 ::selection {
     background-color: transparent;
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 900px) and (min-width: 436px) {
+    * {
+        font-size: 57.5%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    * {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 435px){
+    * {
+        font-size: 45%;
+    }
 }
