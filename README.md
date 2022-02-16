@@ -6,8 +6,8 @@
 [![last-commit](https://img.shields.io/github/last-commit/KenTandrian/mcf2022-project)](https://github.com/KenTandrian/mcf2022-project/commits/main)
 
 ## Introduction
-Ignite your future pathway!\
-This is a website project for the capstone project of Dicoding Indonesia: Front-end Web Development learning path, which is included in the Bangkit Academy 2022 program.\
+A website about career festival in Medan, Indonesia. Ignite your future pathway!\
+This is a website project for the capstone project of Dicoding Indonesia: Front-end Web Development learning path, which is included in the Bangkit Academy 2022 program.
 
 ## Technologies
 [![HTML5](https://img.shields.io/badge/-HTML5-black?style=flat-square&logo=html5&logoColor=orange)](https://github.com/KenTandrian?tab=repositories&language=html)
