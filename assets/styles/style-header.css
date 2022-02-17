@@ -7,7 +7,7 @@
     background-image: 
         linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), 
         linear-gradient(to left, rgba(32, 101, 191, 0.5), rgba(242, 46, 173, 0.5)), 
-        url('../images/charles-forerunner-3fPXt37X6UQ-unsplash_.jpg');
+        url('../images/charles-forerunner-3fPXt37X6UQ-unsplash_1.jpg');
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
@@ -114,6 +114,9 @@
     .header-heading { font-size: 6.5rem; line-height: 8rem;}
     .header-heading > span { font-size: 4.5rem; }
     #header-sub { font-size: 5rem; line-height: 5.5rem; }
+    .header-nav-link::after {
+        height: .3rem;
+    }
 }
 
 /* Large screen and TV */

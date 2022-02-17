@@ -163,11 +163,11 @@ const companiesData = [
         id: 17,
         name: 'Shopee Indonesia',
         subject: 'E-Commerce',
-        logo: 'Shopee.jpg'
+        logo: 'Shopee_.jpg'
     },{
         id: 18,
         name: 'PT Waruna Nusa Sentana',
         subject: 'Shipyard & Shipping',
-        logo: 'Waruna.jpg'
+        logo: 'Waruna_.jpg'
     }
 ]

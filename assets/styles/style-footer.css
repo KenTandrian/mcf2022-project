@@ -153,5 +153,5 @@ ion-icon.footer-icon {
 
 /* Large screen and TV */
 @media only screen  and (min-width : 1800px) {
-    
+    .footer-top-textbox { padding-left: 10rem; }
 }

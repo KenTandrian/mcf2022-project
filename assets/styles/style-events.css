@@ -2,11 +2,12 @@
     background-image: 
         linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), 
         linear-gradient(to left, rgba(32, 101, 191, 0.5), rgba(242, 46, 173, 0.5)), 
-        url('../images/alexandre-pellaes-6vAjp0pscX0-unsplash_.jpg');
+        url('../images/alexandre-pellaes-6vAjp0pscX0-unsplash_1.jpg');
     background-size: cover;
     overflow: hidden;
     background-position: center;
     background-attachment: fixed;
+    position: relative;
 }
 
 .events-content-box {
@@ -14,6 +15,73 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+}
+
+/* EVENTBRITE ICON */
+#icon-eventbrite {
+    position: absolute;
+    display: flex;
+    top: 7.5rem;
+    right: 6rem;
+    z-index: 98;
+    border: none;
+    outline: none;
+    background-color: var(--color-white); 
+    cursor: pointer;
+    padding: 1.2rem;
+    border-radius: 50%; 
+    width: 4.5rem;
+    height: 4.5rem;
+    text-align: center;
+    box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, 0.35);
+    transition: background-color .2s, transform .2s;
+}
+
+.icon-eventbrite {
+    border-radius: 50%; 
+}
+
+.icon-eventbrite-content{
+    position: absolute;
+    font-size: 1.6rem;
+    color: var(--color-white);
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: right;
+    width: 0;
+}
+
+h3.slide-out {
+    animation-name: slideInLeft;
+    animation-duration: 0.7s;
+    right: 0;
+    width: 0;
+}
+
+#icon-eventbrite:hover > h3.slide-out {
+    width: 164px;
+    right: 5.5rem;
+    animation-name: slideOutLeft;
+    animation-duration: 1s;
+}
+
+@keyframes slideOutLeft {
+    from { width: 0; right: 0; }
+    to { width: 164px; right: 5.5rem; }
+}
+
+@keyframes slideInLeft {
+    from { width: 164px; right: 5.5rem; }
+    to { width: 0; right: 0; }
+}
+
+.icon-eventbrite {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 99;
+    width: 4.5rem;
+    height: 4.5rem;
 }
 
 /* MEDIA QUERIES */
@@ -24,6 +92,17 @@
         padding: 10px 35px;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
+        padding-bottom: 60px;
+    }
+    #icon-eventbrite {
+        bottom: 35px;
+        top: unset;
+        right: 35px;
+    }
+    h3.slide-out {
+        animation: unset;
+        width: 164px;
+        right: 5.5rem;
     }
 }
 
@@ -33,6 +112,17 @@
         padding: 10px 35px;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
+        padding-bottom: 60px;
+    }
+    #icon-eventbrite {
+        bottom: 35px;
+        top: unset;
+        right: 35px;
+    }
+    h3.slide-out {
+        animation: unset;
+        width: 164px;
+        right: 5.5rem;
     }
 }
 
