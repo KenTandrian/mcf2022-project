@@ -4,7 +4,6 @@
 .header {
     height: 100vh;
     min-height: 700px;
-    /*width: 100%;*/
     background-image: 
         linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), 
         linear-gradient(to left, rgba(32, 101, 191, 0.5), rgba(242, 46, 173, 0.5)), 
@@ -61,12 +60,8 @@
 }
 
 .header-btm {
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* width: 100%; */
     height: 70%;
+    padding: 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,19 +81,42 @@
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
 }
 
-/* MEDIA QUERY */
-@media only screen and (max-width: 900px) and (min-width: 436px) {
-    
-}
 
-@media only screen and (max-width: 600px){
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .header-top { display: flex; flex-direction: column; }
+    .header-logo { margin-bottom: 3rem; }
+    .header-btm { padding: 0 20px; }
+    .header-nav-link:link, .header-nav-link:visited { margin: 0 1.2rem; }
 }
 
-@media only screen and (max-width: 435px){
-    
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .header-top { display: flex; flex-direction: column; }
+    .header-logo { margin-bottom: 3rem; }
+    .header-nav-link:link, .header-nav-link:visited { margin: 0 1.5rem; }
 }
 
-@media only screen and (max-width: 375px){
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .header-nav-link:link, .header-nav-link:visited { margin: 0 1.5rem; }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .header-nav-link:link, .header-nav-link:visited { margin: 0 2rem; font-size: 1.6rem; }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .header-heading { font-size: 6.5rem; line-height: 8rem;}
+    .header-heading > span { font-size: 4.5rem; }
+    #header-sub { font-size: 5rem; line-height: 5.5rem; }
+}
+
+/* Large screen and TV */
+@media only screen and (min-width : 1800px) {
     
 }

@@ -78,6 +78,7 @@ const renderEvents = (data) => {
   data.forEach(({ name, speaker, position, image, date, time, price}) => {
     let row = document.createElement('div');
     row.classList.add('card-vertical');
+    row.classList.add('card-event');
 
     row.innerHTML = `
       <div class="card-img" style="background-image: url(./assets/images/${image});">&nbsp;</div>
@@ -111,9 +112,10 @@ const renderCompanies = (data) => {
   data.forEach(({ name, logo, subject }) => {
     let row = document.createElement('div');
     row.classList.add('card-horizontal');
+    row.classList.add('card-corp');
 
     row.innerHTML = `
-      <div class="card-comp-logos" style="background-image: url('./assets/logos/${logo}');">&nbsp;</div>
+      <div class="card-corp-logos" style="background-image: url('./assets/logos/${logo}');">&nbsp;</div>
       <div class="card-content">
         <h3 class="card-heading">${name}</h3>
         <p class="card-desc">${subject}</p>

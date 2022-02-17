@@ -86,53 +86,72 @@ ion-icon.footer-icon {
     color: var(--color-text-gray);
 }
 
-/* MEDIA QUERY */
-@media only screen and (max-width: 900px) and (min-width: 436px) {
-    .footer { padding: 2rem 2rem; }
 
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .footer-top {
         flex-direction: column;
         align-items: center;
     }
 
-    .footer-top-textbox {
-        padding-left: 0;
-        width: 80%;
-    }
+    .footer-top-textbox { padding-left: 0; }
 
     .footer-logo {
         height: auto;
-        width: 50%;
-        margin: 4rem 0;
+        width: 90%;
+        margin: 2rem 0 4rem 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-top-textbox { padding-left: 0; }
+
+    .footer-logo {
+        height: auto;
+        width: 90%;
+        margin: 2rem 0 4rem 0;
     }
 
     .footer-icon { margin-right: 1.3rem; }
 }
 
-@media only screen and (max-width: 600px){
-    .footer-logo {
-        width: 90%;
-    }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .footer-logo { width: 60%; }
 }
 
-@media only screen and (max-width: 435px){
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
     .footer-top {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
     }
-
-    .footer-top-textbox {
-        padding-left: 0;
-        width: 80%;
+    .footer-logo { 
+        width: 30%; 
+        margin: 0;
     }
+    .footer-top-textbox { padding-left: 5rem; }
+}
 
-    .footer-logo {
-        height: auto;
-        width: 50%;
-        margin: 2rem 0;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .footer-logo { 
+        height: 15rem;
+        width: unset; 
+        margin: 0;
     }
 }
 
-@media only screen and (max-width: 375px){
-
+/* Large screen and TV */
+@media only screen  and (min-width : 1800px) {
+    
 }

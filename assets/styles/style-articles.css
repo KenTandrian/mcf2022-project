@@ -19,7 +19,7 @@ article {
     text-align: center;
     font-weight: 300;
     font-size: 1.6rem;
-    line-height: 4rem;
+    line-height: 2rem;
     padding: 0 5rem;
 }
 
@@ -122,4 +122,40 @@ article {
     display: inline-block;
     font-size: 1.2rem;
     line-height: 1.2rem;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .heading-box {
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+/* Large screen and TV */
+@media only screen  and (min-width : 1800px) {
+    
 }

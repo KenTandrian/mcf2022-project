@@ -5,7 +5,7 @@
     grid-gap: 30px;
 }
 
-.card-comp-logos {
+.card-corp-logos {
     border-radius: .9rem .9rem 0 0;
     width: 150px;
     height: 100%;
@@ -14,11 +14,73 @@
     background-position: center;
 }
 
-@media only screen and (max-width: 1600px){
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .card-corp > .card-content { display: none; }
+    .card-corp-logos {
+        width: 90px;
+        height: 90px;
+    }
+    .companies-content-box { 
+        grid-template-columns: repeat(2, 1fr); 
+        width: max-content;
+        margin: 1rem auto;
+        padding: 10px 35px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .card-corp > .card-content { display: none; }
+    .card-corp-logos {
+        width: 80px;
+        height: 80px;
+    }
+
+    .companies-content-box {
+        grid-template-columns: repeat(3, 1fr);
+        width: max-content;
+        margin: 1rem auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .companies-content-box {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem auto;
+        padding: 10px 35px;
+    }
+
+    .card-corp {
+        padding: 1.5rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
     .companies-content-box {
         padding: 20px 60px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+/* Large screen and TV */
+@media only screen and (min-width : 1800px) {
+    .companies-content-box {
+        padding: 20px 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
     }
 }

@@ -58,8 +58,8 @@ const eventsData = [
         id: 5,
         name: 'Building Your Own Startup',
         desc: 'Learn how to create your own startup.',
-        speaker: '40+ Companies',
-        position: 'from Indonesia and abroad',
+        speaker: 'Ikhsan Jauhari',
+        position: 'Founder of Indonesia Startup Academy',
         image: 'mika-baumeister-Y_LgXwQEx2c-unsplash_.jpg',
         date: 'April 08, 2022',
         time: '15.00 - 16.00 WIB',
@@ -106,12 +106,12 @@ const companiesData = [
         logo: 'HOCK.png'
     },{
         id: 6,
-        name: 'PT Lautan Luas, Tbk',
+        name: 'PT Lautan Luas',
         subject: 'Basic Chemical',
         logo: 'Lautan Luas.png'
     },{
         id: 7,
-        name: 'Lippo Karawaci',
+        name: 'PT Lippo Karawaci',
         subject: 'Real Estate & Healthcare',
         logo: 'Lippo Karawaci.png'
     },{
@@ -161,12 +161,12 @@ const companiesData = [
         logo: 'HSBC.png'
     },{
         id: 17,
-        name: 'Shopee Internasional Indonesia',
+        name: 'Shopee Indonesia',
         subject: 'E-Commerce',
         logo: 'Shopee.jpg'
     },{
         id: 18,
-        name: 'PT Waruna Nusa Sentana (MJS Line)',
+        name: 'PT Waruna Nusa Sentana',
         subject: 'Shipyard & Shipping',
         logo: 'Waruna.jpg'
     }

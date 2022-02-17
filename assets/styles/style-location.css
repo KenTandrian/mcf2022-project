@@ -19,8 +19,12 @@
 .location-cp-box {
     padding: 20px 60px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-gap: 50px;
+}
+
+.card-info-cp {
+    justify-content: center;
 }
 
 .myimg {
@@ -39,16 +43,17 @@
     align-items: center;
 }
 
-.info-cp-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0 2rem;
-}
-
-.info-cp-1 > p {
+.info-cp-1-content > p, .info-cp-1-content > h3 {
     text-align: center;
     margin-top: 1rem;
+}
+
+.info-cp-2 {
+    margin: 2rem 0;
+}
+
+.info-cp-2 > h3 {
+    text-align: center;
 }
 
 .info-dev-box {
@@ -91,29 +96,97 @@ ion-icon.info-cp-icon {
     background-color: #bdbdbd;
 }
 
-.info-dev {
-    margin: 1rem;
-    display: flex;
-    align-items: center;
-    width: auto;
-    text-align: center;
-    border-radius: 10rem;
-    font-size: 1.1rem;
-    padding: .7rem 1rem .5rem 1rem;
-    color: var(--color-text-gray);
-    border: .1rem solid var(--color-text-gray);
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .myimg { height: 8rem; width: 8rem; }
+
+    .card-info-cp {
+        margin: 2rem 0;
+    }
+    .info-cp-1 { flex-direction: row; }
+    .info-cp-1-content { margin-left: 3rem; }
+
+    .info-cp-1-content > p, .info-cp-1-content > h3 {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .info-cp-1-content > h3 { font-size: 2.5rem; }
+
+    .info-cp-iconbox {
+        margin-top: 0;
+    }
+
+    .location-map-frame {
+        border: 0;
+        border-radius: 0.9rem;
+        width: 100%;
+        height: 100%;             
+    }
+
+    .location-cp-box {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem;
+    }
 }
 
-ion-icon.info-dev-icon {
-    font-size: 16pt !important;
-    margin-right: .5rem;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .card-info-cp {
+        margin: 2rem 0;
+    }
+    .info-cp-1 { flex-direction: row; }
+    .info-cp-1-content { margin-left: 3rem; }
+
+    .info-cp-1-content > p, .info-cp-1-content > h3 {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .info-cp-1-content > h3 {
+        font-size: 3rem;
+    }
+
+    .info-cp-iconbox {
+        margin-top: 0;
+    }
+
+    .location-map-frame {
+        border: 0;
+        border-radius: 0.9rem;
+        width: 100%;
+        height: 100%;             
+    }
+
+    .location-cp-box {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1.5rem;
+    }
 }
 
-.card-content-info {
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: .5rem 0;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .location-cp-box { 
+        grid-template-rows: unset;
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .location-cp-box { grid-template-columns: 3fr 2fr; }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .location-cp-box { grid-template-columns: 2fr 1fr; }
+}
+
+/* Large screen and TV */
+@media only screen  and (min-width : 1800px) {
+    .location-cp-box { grid-template-columns: 4fr 1fr; }
 }
